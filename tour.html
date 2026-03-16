@@ -175,19 +175,24 @@ html,body{
     display:flex;
     flex-direction:column;
     position:fixed;
-    top: 0;
+    top:0;
     right:-300px; /* hidden off-screen initially */
     width:250px;
     height:100vh; /* full viewport height */
     background:#1b120d;
-    padding-top:100px; /* remove extra top padding */
+    padding-top:100px; 
     padding-left:10px;
     padding-right:10px;
     gap:10px;
     transition:right 0.3s ease;
     z-index:10000;
-    overflow-y:auto;
+    overflow-y:auto; /* allow vertical scrolling */
+    -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+    -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+    box-sizing: border-box;  
   }
+
+  
 
   #menu .close-btn{
     display:block;
@@ -203,6 +208,8 @@ html,body{
     position:relative;
     top:0;
     background:#222;
+    max-height: calc(100vh - 120px); /* prevent dropdown from going outside menu */
+    overflow-y: auto;  
   }
 
   #hamburger{
