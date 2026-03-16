@@ -441,8 +441,9 @@ window.addEventListener('click', function(){
 });
 
 document.querySelector('#logo a').addEventListener('click', function(e){
-    window.location.href = this.href;
-  });
+  e.preventDefault(); // prevent iframe default
+  window.top.location.href = this.href; // parent page reload
+});
 
 </script>
 
