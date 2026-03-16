@@ -142,6 +142,40 @@ html,body{
   cursor:pointer;
 }
 
+.u-res-btn {
+  position: relative;          /* arrow কে absolute করতে */
+  display: flex;
+  flex-direction: column;      /* text vertical */
+  align-items: flex-start;     /* text বামে থাকবে */
+  
+  padding-right: 25px;         /* arrow এর জন্য জায়গা */
+  cursor: pointer;
+}
+
+.u-res-btn .menu-sub {
+  font-size: 12px;
+  color: #fff;
+}
+
+/* arrow */
+.u-res-btn::after {
+  content: "";
+  position: absolute;          /* text থেকে আলাদা */
+  top: 26%;                    /* vertical center */
+  right: 0;                    /* ডানদিকে */
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('https://cdn.prod.website-files.com/646b26f8d9c8a8dbd4131e11/69b3925a35c4b0a728f55910_down-arrow.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.dropdown.open > .u-res-btn::after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
 /* Under 1280px */
 @media (max-width:1280px){
   .dropdown > button{
@@ -171,6 +205,25 @@ html,body{
 
 /* MOBILE MENU FIXED FULL HEIGHT */
 @media (max-width:768px){
+
+  .u-res-btn .menu-sub {
+    display: none;
+  }
+   .u-res-btn {
+    flex-direction: row;  /* horizontal */
+    align-items: center;
+    padding-right: 6px;  /* less space for arrow */
+  }
+
+  .u-res-btn .menu-sub {
+    display: none;        /* hide subtitle */
+  }
+
+  .u-res-btn::after {
+    position: static;     /* arrow inline like other buttons */
+    transform: none;
+    margin-left: auto;    /* push arrow to right */
+  }
   #menu{
     display:flex;
     flex-direction:column;
@@ -297,7 +350,9 @@ html,body{
 
     <!-- COMMON FACILITIES -->
     <div class="dropdown">
-      <button>Common Facilities</button>
+      <button>Common Facilities  
+        
+      </button>
       <div class="dropdown-content">
         <button onclick="goScene('scene_0_lift_lobby')">Lift Lobby</button>
         <button onclick="goScene('scene_1_main_entrance')">Main Entrance</button>
@@ -316,7 +371,11 @@ html,body{
 
     <!-- EN SUITES -->
     <div class="dropdown">
-      <button>En-suites</button>
+      
+        <button class="u-res-btn">En-suites <span class="menu-sub">@U Residence</span> </button>
+      
+
+       
       <div class="dropdown-content">
         <button onclick="goScene('scene_12_en_suites_corridor')">Corridor</button>
         <button onclick="goScene('scene_13_en_suites_single')">Single</button>
@@ -327,7 +386,8 @@ html,body{
 
     <!-- APARTMENT -->
     <div class="dropdown">
-      <button>Apartment</button>
+      <button class="u-res-btn">Apartment <span class="menu-sub">@U Residence</span> </button>
+      
       <div class="dropdown-content">
         <button onclick="goScene('scene_16_apartment_corridor')">Corridor</button>
         <button onclick="goScene('scene_17_apartment_washroom')">Washroom</button>
