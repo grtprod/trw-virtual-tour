@@ -103,7 +103,11 @@ html,body{
 .dropdown-content{
   display:none;
   position:absolute;
-  min-width:220px;
+  min-width:260px;
+  max-width: min(360px, calc(100vw - 24px));
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   margin-top: 10px;
   margin-left: 10px;
   /* background:#1b120d; */

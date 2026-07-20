@@ -505,6 +505,12 @@
 
 	</scene>
 
+	<!--
+		OLD OFF-CAMPUS SCENES (retired from menu — replaced by YOIHO Dorsett Waterfront below).
+		Kept commented for easy rollback until tile folders panos/31_* … panos/37_* are deleted later.
+		Former menu: Entrance, Apartment Common, Single Room, Twin Room, Student Lounge, Common Kitchen, Gym.
+	-->
+	<!--
 	<scene name="scene_31_entrance" title="Entrance" onstart="" thumburl="panos/31_Entrance.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -602,8 +608,9 @@
 		</image>
 
 	</scene>
+	-->
 
-	<!-- YOIHO Dorsett Waterfront (Off-campus) -->
+	<!-- YOIHO Dorsett Waterfront (Off-campus) — live replacement for the block above -->
 	<scene name="scene_yoiho_studio_single_twin" title="Studio Single/Twin" onstart="" thumburl="panos/Yoiho_Studio_Single_Twin.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
