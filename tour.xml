@@ -505,6 +505,12 @@
 
 	</scene>
 
+	<!--
+		OLD OFF-CAMPUS SCENES (retired from menu — replaced by YOIHO Dorsett Waterfront below).
+		Kept commented for easy rollback until tile folders panos/31_* … panos/37_* are deleted later.
+		Former menu: Entrance, Apartment Common, Single Room, Twin Room, Student Lounge, Common Kitchen, Gym.
+	-->
+	<!--
 	<scene name="scene_31_entrance" title="Entrance" onstart="" thumburl="panos/31_Entrance.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
@@ -599,6 +605,106 @@
 
 		<image>
 			<sphere url="panos/37_Gym.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x832,3328x1664,6656x3328,13056x6528" />
+		</image>
+
+	</scene>
+	-->
+
+	<!-- YOIHO Dorsett Waterfront (Off-campus) — live replacement for the block above -->
+	<scene name="scene_yoiho_studio_single_twin" title="Studio Single/Twin" onstart="" thumburl="panos/Yoiho_Studio_Single_Twin.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Yoiho_Studio_Single_Twin.tiles/preview.jpg" />
+
+		<image>
+			<sphere url="panos/Yoiho_Studio_Single_Twin.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x832,3328x1664,6656x3328,13056x6528" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_yoiho_2room_apartment_pantry" title="2-room Apartment Pantry" onstart="" thumburl="panos/Yoiho_2room_Apartment_Pantry.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Yoiho_2room_Apartment_Pantry.tiles/preview.jpg" />
+
+		<image>
+			<sphere url="panos/Yoiho_2room_Apartment_Pantry.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x832,3328x1664,6656x3328,13056x6528" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_yoiho_2room_apartment_single_no_window" title="2-room Apartment Single (no window)" onstart="" thumburl="panos/Yoiho_2room_Apartment_Single_No_Window.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Yoiho_2room_Apartment_Single_No_Window.tiles/preview.jpg" />
+
+		<image>
+			<sphere url="panos/Yoiho_2room_Apartment_Single_No_Window.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x832,3328x1664,6656x3328,13056x6528" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_yoiho_2room_apartment_single_twin" title="2-room Apartment Single/Twin" onstart="" thumburl="panos/Yoiho_2room_Apartment_Single_Twin.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Yoiho_2room_Apartment_Single_Twin.tiles/preview.jpg" />
+
+		<image>
+			<sphere url="panos/Yoiho_2room_Apartment_Single_Twin.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x832,3328x1664,6656x3328,13056x6528" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_yoiho_common_kitchen" title="Common Kitchen" onstart="" thumburl="panos/Yoiho_Common_Kitchen.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Yoiho_Common_Kitchen.tiles/preview.jpg" />
+
+		<image>
+			<sphere url="panos/Yoiho_Common_Kitchen.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x832,3328x1664,6656x3328,13056x6528" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_yoiho_swimming_pool" title="Swimming Pool" onstart="" thumburl="panos/Yoiho_Swimming_Pool.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Yoiho_Swimming_Pool.tiles/preview.jpg" />
+
+		<image>
+			<sphere url="panos/Yoiho_Swimming_Pool.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x832,3328x1664,6656x3328,13056x6528" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_yoiho_game_room" title="Game Room" onstart="" thumburl="panos/Yoiho_Game_Room.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Yoiho_Game_Room.tiles/preview.jpg" />
+
+		<image>
+			<sphere url="panos/Yoiho_Game_Room.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1664x832,3328x1664,6656x3328,13056x6528" />
 		</image>
 
 	</scene>
